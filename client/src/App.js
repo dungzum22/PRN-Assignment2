@@ -19,7 +19,7 @@ function NavigationBar() {
     <nav className="navbar">
       <div className="nav-container">
         <h1 className="nav-logo">
-          <Link to="/">⚡ CYBER STORE ⚡</Link>
+          <Link to="/">🎬 SHOP NEW 🎬</Link>
         </h1>
         <ul className="nav-menu">
           <li className="nav-item">

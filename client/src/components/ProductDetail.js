@@ -53,7 +53,7 @@ const ProductDetail = () => {
   if (loading) {
     return (
       <div className="loading-container">
-        <div className="cyber-loader">
+        <div className="cinema-loader">
           <div className="loader-ring"></div>
           <div className="loader-ring"></div>
           <div className="loader-ring"></div>

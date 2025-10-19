@@ -8,19 +8,19 @@
 .checkout-header {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #00ff88;
+  border-bottom: 2px solid #ff6666;
 }
 
 .checkout-header h2 {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 2rem;
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  text-shadow: 0 0 10px rgba(255, 102, 102, 0.5);
 }
 
 .checkout-error {
-  background: rgba(255, 59, 48, 0.1);
-  border: 2px solid #ff3b30;
-  color: #ff6b6b;
+  background: rgba(220, 20, 60, 0.1);
+  border: 2px solid #ff4444;
+  color: #ff4444;
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1.5rem;
@@ -41,14 +41,14 @@
 }
 
 .checkout-section {
-  background: rgba(26, 26, 46, 0.95);
-  border: 2px solid #333;
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid #3a3a3a;
   border-radius: 12px;
   padding: 2rem;
 }
 
 .checkout-section h3 {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
@@ -65,17 +65,17 @@
   display: flex;
   justify-content: space-between;
   padding: 0.75rem;
-  background: rgba(15, 15, 30, 0.6);
+  background: rgba(10, 10, 10, 0.6);
   border-radius: 8px;
 }
 
 .info-label {
-  color: #888;
+  color: #b8b8b8;
   font-weight: 600;
 }
 
 .info-value {
-  color: #fff;
+  color: #e8e8e8;
   font-weight: 500;
 }
 
@@ -90,7 +90,7 @@
   grid-template-columns: 80px 1fr auto;
   gap: 1rem;
   padding: 1rem;
-  background: rgba(15, 15, 30, 0.6);
+  background: rgba(10, 10, 10, 0.6);
   border-radius: 8px;
   align-items: center;
 }
@@ -100,7 +100,7 @@
   height: 80px;
   border-radius: 6px;
   overflow: hidden;
-  background: #1a1a2e;
+  background: #1a1a1a;
 }
 
 .checkout-item-image img {
@@ -120,18 +120,18 @@
 }
 
 .checkout-item-details h4 {
-  color: #fff;
+  color: #e8e8e8;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
 .checkout-item-price {
-  color: #888;
+  color: #b8b8b8;
   font-size: 0.9rem;
 }
 
 .checkout-item-total {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 1.2rem;
   font-weight: 700;
   text-align: right;
@@ -153,9 +153,9 @@
 .payment-method-btn {
   flex: 1;
   padding: 15px;
-  border: 2px solid #333;
-  background: rgba(26, 26, 46, 0.6);
-  color: #e0e0e0;
+  border: 2px solid #3a3a3a;
+  background: rgba(20, 20, 20, 0.6);
+  color: #e8e8e8;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -164,16 +164,16 @@
 }
 
 .payment-method-btn:hover {
-  border-color: #00ff88;
-  background: rgba(0, 255, 136, 0.1);
+  border-color: #ff6666;
+  background: rgba(220, 20, 60, 0.1);
   transform: translateY(-2px);
 }
 
 .payment-method-btn.active {
-  border-color: #00ff88;
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(0, 255, 136, 0.1));
-  color: #00ff88;
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  border-color: #ff6666;
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.2), rgba(220, 20, 60, 0.1));
+  color: #ff6666;
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.3);
 }
 
 /* Cash Payment Section */
@@ -182,8 +182,8 @@
 }
 
 .cash-info {
-  background: rgba(15, 15, 30, 0.6);
-  border: 1px solid #333;
+  background: rgba(10, 10, 10, 0.6);
+  border: 1px solid #3a3a3a;
   border-radius: 8px;
   padding: 15px;
   margin: 15px 0;
@@ -191,7 +191,7 @@
 
 .cash-info p {
   margin: 8px 0;
-  color: #e0e0e0;
+  color: #e8e8e8;
   font-size: 14px;
 }
 
@@ -202,7 +202,7 @@
 
 .loading-payment p {
   margin-top: 15px;
-  color: #00ff88;
+  color: #ff6666;
 }
 
 /* Stripe Payment Section */
@@ -215,8 +215,8 @@
 }
 
 .payment-summary-form {
-  background: rgba(15, 15, 30, 0.6);
-  border: 1px solid #333;
+  background: rgba(10, 10, 10, 0.6);
+  border: 1px solid #3a3a3a;
   border-radius: 8px;
   padding: 15px;
   margin: 15px 0;
@@ -229,16 +229,16 @@
 
 .payment-summary-form .total-amount {
   font-weight: 700;
-  color: #00ff88;
+  color: #ff6666;
   font-size: 20px;
 }
 
 .payment-note {
-  color: #888;
+  color: #b8b8b8;
   font-size: 0.9rem;
   padding: 1rem;
-  background: rgba(0, 255, 136, 0.1);
-  border: 1px solid rgba(0, 255, 136, 0.3);
+  background: rgba(220, 20, 60, 0.1);
+  border: 1px solid rgba(220, 20, 60, 0.3);
   border-radius: 8px;
   text-align: center;
 }
@@ -248,29 +248,29 @@
   align-items: center;
   gap: 1rem;
   padding: 1.25rem;
-  background: rgba(15, 15, 30, 0.6);
-  border: 2px solid #333;
+  background: rgba(10, 10, 10, 0.6);
+  border: 2px solid #3a3a3a;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .payment-method:hover {
-  border-color: #00ff88;
+  border-color: #ff6666;
 }
 
 .payment-method input[type="radio"] {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  accent-color: #00ff88;
+  accent-color: #ff6666;
 }
 
 .payment-method label {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: #fff;
+  color: #e8e8e8;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -289,19 +289,19 @@
 }
 
 .summary-card {
-  background: rgba(26, 26, 46, 0.95);
-  border: 2px solid #00ff88;
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid #ff6666;
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+  box-shadow: 0 0 30px rgba(255, 102, 102, 0.2);
 }
 
 .summary-card h3 {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  text-shadow: 0 0 10px rgba(255, 102, 102, 0.5);
 }
 
 .summary-row {
@@ -309,18 +309,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 0;
-  color: #ccc;
+  color: #d0a580;
   font-size: 1rem;
 }
 
 .summary-row span:last-child {
   font-weight: 600;
-  color: #fff;
+  color: #e8e8e8;
 }
 
 .free-badge {
-  background: rgba(0, 255, 136, 0.2);
-  color: #00ff88 !important;
+  background: rgba(220, 20, 60, 0.2);
+  color: #ff6666 !important;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   font-size: 0.85rem;
@@ -329,20 +329,20 @@
 
 .summary-divider {
   height: 2px;
-  background: linear-gradient(90deg, transparent, #00ff88, transparent);
+  background: linear-gradient(90deg, transparent, #ff6666, transparent);
   margin: 1rem 0;
 }
 
 .summary-total {
   font-size: 1.3rem;
-  color: #00ff88;
+  color: #ff6666;
   font-weight: 700;
   padding: 1rem 0;
 }
 
 .summary-total span:last-child {
   font-size: 1.5rem;
-  color: #00ff88;
+  color: #ff6666;
 }
 
 .btn-block {
@@ -358,12 +358,12 @@
 .security-notice {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #333;
+  border-top: 1px solid #3a3a3a;
   text-align: center;
 }
 
 .security-notice p {
-  color: #888;
+  color: #b8b8b8;
   font-size: 0.9rem;
 }
 

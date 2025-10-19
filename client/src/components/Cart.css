@@ -11,20 +11,20 @@
   align-items: center;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #00ff88;
+  border-bottom: 2px solid #ff6666;
 }
 
 .cart-header h2 {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 2rem;
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  text-shadow: 0 0 10px rgba(255, 102, 102, 0.5);
 }
 
 .empty-cart {
   text-align: center;
   padding: 4rem 2rem;
-  background: rgba(26, 26, 46, 0.95);
-  border: 2px solid #333;
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid #3a3a3a;
   border-radius: 15px;
   margin-top: 2rem;
 }
@@ -36,13 +36,13 @@
 }
 
 .empty-cart h3 {
-  color: #fff;
+  color: #e8e8e8;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
 .empty-cart p {
-  color: #888;
+  color: #b8b8b8;
   margin-bottom: 2rem;
 }
 
@@ -62,16 +62,16 @@
   display: grid;
   grid-template-columns: 150px 1fr auto;
   gap: 1.5rem;
-  background: rgba(26, 26, 46, 0.95);
-  border: 2px solid #333;
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid #3a3a3a;
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.3s ease;
 }
 
 .cart-item:hover {
-  border-color: #00ff88;
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+  border-color: #ff6666;
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.2);
 }
 
 .cart-item-image {
@@ -79,7 +79,7 @@
   height: 150px;
   border-radius: 8px;
   overflow: hidden;
-  background: #1a1a2e;
+  background: #1a1a1a;
 }
 
 .cart-item-image img {
@@ -105,13 +105,13 @@
 }
 
 .cart-item-details h3 {
-  color: #fff;
+  color: #e8e8e8;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 
 .cart-item-description {
-  color: #888;
+  color: #b8b8b8;
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
   display: -webkit-box;
@@ -121,7 +121,7 @@
 }
 
 .cart-item-price {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -145,15 +145,15 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(15, 15, 30, 0.8);
-  border: 2px solid #333;
+  background: rgba(10, 10, 10, 0.8);
+  border: 2px solid #3a3a3a;
   border-radius: 8px;
   padding: 0.25rem;
 }
 
 .quantity-btn {
-  background: linear-gradient(180deg, #00ff88 0%, #00cc6a 100%);
-  color: #071014;
+  background: linear-gradient(180deg, #dc143c 0%, #c41e3a 100%);
+  color: #fff;
   border: none;
   width: 42px;
   height: 42px;
@@ -165,12 +165,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(0,255,136,0.08);
+  box-shadow: 0 4px 10px rgba(220, 20, 60, 0.08);
 }
 
 .quantity-btn:hover:not(:disabled) {
   transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 8px 18px rgba(0,255,136,0.14);
+  box-shadow: 0 8px 18px rgba(220, 20, 60, 0.14);
 }
 .item-controls {
   display: flex;
@@ -182,7 +182,7 @@
 }
 
 .quantity-display {
-  color: #fff;
+  color: #e8e8e8;
   font-size: 1.1rem;
   font-weight: 600;
   min-width: 48px;
@@ -206,13 +206,13 @@
 }
 
 .subtotal-label {
-  color: #888;
+  color: #b8b8b8;
   font-size: 0.85rem;
   margin-bottom: 0.25rem;
 }
 
 .subtotal-value {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -237,19 +237,19 @@
 }
 
 .summary-card {
-  background: rgba(26, 26, 46, 0.95);
-  border: 2px solid #00ff88;
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid #ff6666;
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+  box-shadow: 0 0 30px rgba(255, 102, 102, 0.2);
 }
 
 .summary-card h3 {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  text-shadow: 0 0 10px rgba(255, 102, 102, 0.5);
 }
 
 .summary-row {
@@ -257,31 +257,31 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 0;
-  color: #ccc;
+  color: #d0a580;
   font-size: 1rem;
 }
 
 .summary-row span:last-child {
   font-weight: 600;
-  color: #fff;
+  color: #e8e8e8;
 }
 
 .summary-divider {
   height: 2px;
-  background: linear-gradient(90deg, transparent, #00ff88, transparent);
+  background: linear-gradient(90deg, transparent, #ff6666, transparent);
   margin: 1rem 0;
 }
 
 .summary-total {
   font-size: 1.3rem;
-  color: #00ff88;
+  color: #ff6666;
   font-weight: 700;
   padding: 1rem 0;
 }
 
 .summary-total span:last-child {
   font-size: 1.5rem;
-  color: #00ff88;
+  color: #ff6666;
 }
 
 .btn-block {

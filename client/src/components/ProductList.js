@@ -133,11 +133,11 @@ const ProductList = () => {
       )}
 
       <div className="header">
-        <h2>⚡ CYBER PRODUCTS ⚡</h2>
+        <h2>🎬 SHOP NEW PRODUCTS 🎬</h2>
         <div className="search-container">
           <input
             type="text"
-            placeholder="🔍 Search the matrix..."
+            placeholder="🔍 Search for cinema magic..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="search-input"

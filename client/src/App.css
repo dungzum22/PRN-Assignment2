@@ -8,8 +8,8 @@
 body {
   font-family: 'Segoe UI', 'Roboto', monospace, sans-serif;
   line-height: 1.6;
-  color: #e0e0e0;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  color: #e8e8e8;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2d2d2d 100%);
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -21,10 +21,10 @@ body {
 
 /* Navigation Styles */
 .navbar {
-  background: rgba(10, 10, 10, 0.95);
+  background: rgba(10, 10, 10, 0.98);
   backdrop-filter: blur(10px);
-  border-bottom: 2px solid #00ffff;
-  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+  border-bottom: 2px solid #dc143c;
+  box-shadow: 0 4px 20px rgba(220, 20, 60, 0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -40,13 +40,13 @@ body {
 }
 
 .nav-logo a {
-  color: #00ffff;
+  color: #ff4444;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px #00ffff;
+  text-shadow: 0 0 10px #ff4444;
 }
 
 .nav-menu {
@@ -69,9 +69,9 @@ body {
 }
 
 .nav-link:hover {
-  color: #00ffff;
-  border-color: #00ffff;
-  text-shadow: 0 0 8px #00ffff;
+  color: #ff4444;
+  border-color: #ff4444;
+  text-shadow: 0 0 8px #ff4444;
 }
 
 /* Main Content */
@@ -100,9 +100,9 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(45deg, #00ffff, #0080ff);
-  color: #000;
-  border: 1px solid #00ffff;
+  background: linear-gradient(45deg, #dc143c, #ff4444);
+  color: #fff;
+  border: 1px solid #dc143c;
 }
 
 .btn-secondary {
@@ -112,21 +112,21 @@ body {
 }
 
 .btn-danger {
-  background: linear-gradient(45deg, #ff0040, #ff4080);
+  background: linear-gradient(45deg, #a85c3a, #c4956f);
   color: #fff;
-  border: 1px solid #ff0040;
+  border: 1px solid #a85c3a;
 }
 
 .btn-success {
-  background: linear-gradient(45deg, #00ff88, #00cc6a);
-  color: #000;
-  border: 1px solid #00ff88;
+  background: linear-gradient(45deg, #c41e3a, #dc143c);
+  color: #fff;
+  border: 1px solid #c41e3a;
   font-weight: 700;
 }
 
 .btn-success:hover {
-  background: linear-gradient(45deg, #00cc6a, #00aa55);
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+  background: linear-gradient(45deg, #dc143c, #ff4444);
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.5);
   transform: translateY(-2px);
 }
 
@@ -143,7 +143,7 @@ body {
 }
 
 .user-email {
-  color: #00ff88;
+  color: #ff6666;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -174,10 +174,10 @@ body {
 }
 
 .loading {
-  background: rgba(0, 255, 255, 0.1);
-  color: #00ffff;
-  border-color: #00ffff;
-  text-shadow: 0 0 10px #00ffff;
+  background: rgba(220, 20, 60, 0.1);
+  color: #ff4444;
+  border-color: #ff4444;
+  text-shadow: 0 0 10px #ff4444;
 }
 
 .error, .error-message {
@@ -198,12 +198,12 @@ body {
 }
 
 .product-list-container .header h2 {
-  color: #00ffff;
+  color: #ff4444;
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-shadow: 0 0 20px #00ffff;
+  text-shadow: 0 0 20px #ff4444;
 }
 
 .search-container {
@@ -215,10 +215,10 @@ body {
 .search-input {
   width: 100%;
   padding: 1rem 1.5rem;
-  background: rgba(30, 30, 50, 0.8);
-  border: 2px solid rgba(0, 255, 255, 0.3);
+  background: rgba(20, 20, 20, 0.8);
+  border: 2px solid rgba(220, 20, 60, 0.3);
   border-radius: 25px;
-  color: #e0e0e0;
+  color: #e8e8e8;
   font-size: 1rem;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
@@ -226,9 +226,9 @@ body {
 
 .search-input:focus {
   outline: none;
-  border-color: #00ffff;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-  text-shadow: 0 0 5px #00ffff;
+  border-color: #ff4444;
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.3);
+  text-shadow: 0 0 5px #ff4444;
 }
 
 .search-input::placeholder {
@@ -243,8 +243,8 @@ body {
 }
 
 .product-card {
-  background: rgba(30, 30, 50, 0.9);
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid rgba(220, 20, 60, 0.2);
   border-radius: 20px;
   overflow: hidden;
   backdrop-filter: blur(15px);
@@ -269,13 +269,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  color: #00ffff;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  color: #ff4444;
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px #00ffff;
+  text-shadow: 0 0 10px #ff4444;
 }
 
 .product-info {
@@ -284,27 +284,27 @@ body {
 
 .product-info h3 {
   margin-bottom: 1rem;
-  color: #00ffff;
+  color: #ff4444;
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-shadow: 0 0 8px #00ffff;
+  text-shadow: 0 0 8px #ff4444;
 }
 
 .price {
   font-size: 1.8rem;
   font-weight: 900;
-  background: linear-gradient(45deg, #00ff80, #00ffff);
+  background: linear-gradient(45deg, #dc143c, #ff4444);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 1rem;
-  text-shadow: 0 0 20px #00ff80;
+  text-shadow: 0 0 20px #dc143c;
 }
 
 .description {
-  color: rgba(224, 224, 224, 0.8);
+  color: rgba(232, 232, 232, 0.8);
   margin-bottom: 2rem;
   line-height: 1.6;
   font-size: 0.95rem;
@@ -319,8 +319,8 @@ body {
 .no-products {
   text-align: center;
   padding: 4rem 2rem;
-  background: rgba(30, 30, 50, 0.9);
-  border: 1px solid rgba(0, 255, 255, 0.3);
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid rgba(220, 20, 60, 0.3);
   border-radius: 20px;
   backdrop-filter: blur(15px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -328,9 +328,9 @@ body {
 
 .no-products p {
   font-size: 1.4rem;
-  color: #00ffff;
+  color: #ff4444;
   margin-bottom: 2rem;
-  text-shadow: 0 0 10px #00ffff;
+  text-shadow: 0 0 10px #ff4444;
 }
 
 /* Product Detail Styles */
@@ -341,8 +341,8 @@ body {
 }
 
 .product-detail-container {
-  background: rgba(30, 30, 50, 0.95);
-  border: 1px solid rgba(0, 255, 255, 0.3);
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(220, 20, 60, 0.3);
   border-radius: 20px;
   overflow: hidden;
   backdrop-filter: blur(15px);
@@ -360,7 +360,7 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #00ffff, #ff0040, #00ff80);
+  background: linear-gradient(90deg, #dc143c, #ff4444, #8b0000);
   z-index: 1;
 }
 
@@ -370,13 +370,13 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: rgba(10, 10, 30, 0.8);
-  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  background: rgba(10, 10, 10, 0.8);
+  border-bottom: 1px solid rgba(220, 20, 60, 0.2);
   flex-shrink: 0;
 }
 
 .breadcrumb-link {
-  color: #00ffff;
+  color: #ff4444;
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
@@ -384,12 +384,12 @@ body {
 }
 
 .breadcrumb-separator {
-  color: rgba(224, 224, 224, 0.5);
+  color: rgba(232, 232, 232, 0.5);
   font-size: 0.7rem;
 }
 
 .breadcrumb-current {
-  color: rgba(224, 224, 224, 0.8);
+  color: rgba(232, 232, 232, 0.8);
   font-weight: 500;
   font-size: 0.8rem;
 }
@@ -425,16 +425,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  color: #00ffff;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  color: #ff4444;
   text-align: center;
   padding: 1rem;
-}
-
-.no-image-icon {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  opacity: 0.7;
 }
 
 .no-image-large p {
@@ -443,12 +437,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.3rem;
-  text-shadow: 0 0 15px #00ffff;
+  text-shadow: 0 0 15px #ff4444;
 }
 
 .no-image-large small {
   font-size: 0.8rem;
-  color: rgba(224, 224, 224, 0.6);
+  color: rgba(232, 232, 232, 0.6);
 }
 
 /* Image Overlay */
@@ -469,21 +463,21 @@ body {
 }
 
 .product-id, .product-status {
-  background: rgba(0, 255, 255, 0.2);
+  background: rgba(220, 20, 60, 0.2);
   padding: 0.3rem 0.8rem;
   border-radius: 12px;
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #00ffff;
-  border: 1px solid rgba(0, 255, 255, 0.3);
+  color: #ff4444;
+  border: 1px solid rgba(220, 20, 60, 0.3);
   backdrop-filter: blur(10px);
 }
 
 .product-status {
-  background: rgba(0, 255, 128, 0.2);
-  color: #00ff80;
-  border-color: rgba(0, 255, 128, 0.3);
+  background: rgba(220, 20, 60, 0.2);
+  color: #ff6666;
+  border-color: rgba(220, 20, 60, 0.3);
 }
 
 /* Product Information Section */
@@ -497,18 +491,18 @@ body {
 }
 
 .product-header {
-  border-bottom: 2px solid rgba(0, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(220, 20, 60, 0.2);
   padding-bottom: 1rem;
   flex-shrink: 0;
 }
 
 .product-title {
-  color: #00ffff;
+  color: #ff4444;
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-shadow: 0 0 15px #00ffff;
+  text-shadow: 0 0 15px #ff4444;
   margin-bottom: 0.5rem;
   line-height: 1.1;
 }
@@ -521,7 +515,7 @@ body {
 
 .price-label {
   font-size: 0.8rem;
-  color: rgba(224, 224, 224, 0.6);
+  color: rgba(232, 232, 232, 0.6);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -530,55 +524,55 @@ body {
 .price-value {
   font-size: 2rem;
   font-weight: 900;
-  background: linear-gradient(45deg, #00ff80, #00ffff);
+  background: linear-gradient(45deg, #dc143c, #ff4444);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 20px #00ff80;
+  text-shadow: 0 0 20px #dc143c;
 }
 
 /* Product Description */
 .product-description {
-  background: rgba(10, 10, 30, 0.6);
+  background: rgba(10, 10, 10, 0.6);
   padding: 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(220, 20, 60, 0.2);
   flex-shrink: 0;
 }
 
 .section-title {
-  color: #ff0040;
+  color: #ff6666;
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 8px #ff0040;
+  text-shadow: 0 0 8px #ff6666;
 }
 
 .description-content p {
-  color: rgba(224, 224, 224, 0.9);
+  color: rgba(232, 232, 232, 0.9);
   line-height: 1.5;
   font-size: 0.95rem;
 }
 
 /* Product Metadata */
 .product-metadata {
-  background: rgba(10, 10, 30, 0.8);
+  background: rgba(10, 10, 10, 0.8);
   padding: 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(220, 20, 60, 0.2);
   flex-shrink: 0;
 }
 
 .metadata-title {
-  color: #00ff80;
+  color: #ff6666;
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.8rem;
-  text-shadow: 0 0 8px #00ff80;
+  text-shadow: 0 0 8px #ff6666;
 }
 
 .metadata-grid {
@@ -595,28 +589,28 @@ body {
 
 .metadata-label {
   font-size: 0.7rem;
-  color: rgba(224, 224, 224, 0.6);
+  color: rgba(232, 232, 232, 0.6);
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .metadata-value {
-  color: #e0e0e0;
+  color: #e8e8e8;
   font-weight: 500;
   font-size: 0.8rem;
 }
 
 .status-active {
-  color: #00ff80;
-  text-shadow: 0 0 5px #00ff80;
+  color: #ff6666;
+  text-shadow: 0 0 5px #ff6666;
 }
 
 /* Action Section */
 .action-section {
-  background: rgba(10, 10, 30, 0.8);
+  background: rgba(10, 10, 10, 0.8);
   padding: 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(220, 20, 60, 0.2);
   flex-shrink: 0;
 }
 
@@ -657,9 +651,9 @@ body {
 }
 
 .feature-btn {
-  background: rgba(30, 30, 50, 0.8);
-  border: 1px solid rgba(0, 255, 255, 0.3);
-  color: #00ffff;
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(220, 20, 60, 0.3);
+  color: #ff4444;
   padding: 0.7rem 1.2rem;
   border-radius: 20px;
   cursor: pointer;
@@ -670,8 +664,8 @@ body {
 }
 
 .feature-btn:hover {
-  background: rgba(0, 255, 255, 0.1);
-  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+  background: rgba(220, 20, 60, 0.1);
+  box-shadow: 0 5px 15px rgba(220, 20, 60, 0.3);
   transform: translateY(-2px);
 }
 
@@ -685,7 +679,7 @@ body {
   gap: 2rem;
 }
 
-.cyber-loader {
+.cinema-loader {
   position: relative;
   width: 80px;
   height: 80px;
@@ -696,7 +690,7 @@ body {
   width: 100%;
   height: 100%;
   border: 2px solid transparent;
-  border-top: 2px solid #00ffff;
+  border-top: 2px solid #ff4444;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -706,7 +700,7 @@ body {
   height: 60px;
   top: 10px;
   left: 10px;
-  border-top-color: #ff0040;
+  border-top-color: #dc143c;
   animation-duration: 1.5s;
   animation-direction: reverse;
 }
@@ -716,7 +710,7 @@ body {
   height: 40px;
   top: 20px;
   left: 20px;
-  border-top-color: #00ff80;
+  border-top-color: #8b0000;
   animation-duration: 2s;
 }
 
@@ -726,12 +720,12 @@ body {
 }
 
 .loading-text {
-  color: #00ffff;
+  color: #ff4444;
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 0 15px #00ffff;
+  text-shadow: 0 0 15px #ff4444;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
@@ -746,26 +740,26 @@ body {
 
 .error-content {
   text-align: center;
-  background: rgba(30, 30, 50, 0.95);
+  background: rgba(20, 20, 20, 0.95);
   padding: 3rem;
   border-radius: 25px;
-  border: 2px solid rgba(255, 0, 64, 0.5);
+  border: 2px solid rgba(220, 20, 60, 0.5);
   backdrop-filter: blur(15px);
-  box-shadow: 0 10px 40px rgba(255, 0, 64, 0.2);
+  box-shadow: 0 10px 40px rgba(220, 20, 60, 0.2);
 }
 
 .error-content h2 {
-  color: #ff0040;
+  color: #ff6666;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1rem;
-  text-shadow: 0 0 20px #ff0040;
+  text-shadow: 0 0 20px #ff6666;
 }
 
 .error-content p {
-  color: rgba(224, 224, 224, 0.8);
+  color: rgba(232, 232, 232, 0.8);
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
@@ -794,30 +788,30 @@ body {
 }
 
 .delete-modal {
-  background: rgba(30, 30, 50, 0.95);
-  border: 2px solid rgba(255, 0, 64, 0.5);
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid rgba(220, 20, 60, 0.5);
   border-radius: 20px;
   padding: 0;
   max-width: 500px;
   width: 90%;
   backdrop-filter: blur(20px);
-  box-shadow: 0 20px 60px rgba(255, 0, 64, 0.3);
+  box-shadow: 0 20px 60px rgba(220, 20, 60, 0.3);
   overflow: hidden;
 }
 
 .modal-header {
-  background: rgb(23, 30, 56);
+  background: rgb(10, 10, 10);
   padding: 1.5rem;
-  border-bottom: 1px solid rgba(255, 0, 64, 0.3);
+  border-bottom: 1px solid rgba(220, 20, 60, 0.3);
 }
 
 .modal-header h3 {
-  color: #ff0040;
+  color: #ff4444;
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-shadow: 0 0 10px #ff0040;
+  text-shadow: 0 0 10px #ff4444;
   margin: 0;
 }
 
@@ -826,7 +820,7 @@ body {
 }
 
 .modal-body p {
-  color: rgb(255, 254, 254);
+  color: rgb(232, 232, 232);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -854,14 +848,14 @@ body {
 }
 
 .form-wrapper {
-  background: rgba(30, 30, 50, 0.95);
+  background: rgba(20, 20, 20, 0.95);
   padding: 3rem;
   border-radius: 25px;
   backdrop-filter: blur(15px);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
   width: 100%;
   max-width: 700px;
-  border: 1px solid rgba(0, 255, 255, 0.3);
+  border: 1px solid rgba(220, 20, 60, 0.3);
   position: relative;
 }
 
@@ -872,19 +866,19 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #00ffff, #ff0040, #00ff80);
+  background: linear-gradient(90deg, #dc143c, #ff6666, #8b0000);
   border-radius: 25px 25px 0 0;
 }
 
 .form-wrapper h2 {
-  color: #00ffff;
+  color: #ff4444;
   margin-bottom: 2.5rem;
   text-align: center;
   font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 0 20px #00ffff;
+  text-shadow: 0 0 20px #ff4444;
 }
 
 .product-form {
@@ -901,20 +895,20 @@ body {
 .form-group label {
   margin-bottom: 0.8rem;
   font-weight: 600;
-  color: #ff0040;
+  color: #ff6666;
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-shadow: 0 0 8px #ff0040;
+  text-shadow: 0 0 8px #ff6666;
 }
 
 .form-group input,
 .form-group textarea {
   padding: 1rem 1.5rem;
-  background: rgba(10, 10, 30, 0.8);
-  border: 2px solid rgba(0, 255, 255, 0.3);
+  background: rgba(10, 10, 10, 0.8);
+  border: 2px solid rgba(220, 20, 60, 0.3);
   border-radius: 15px;
-  color: #e0e0e0;
+  color: #e8e8e8;
   font-size: 1rem;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
@@ -923,9 +917,9 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #00ffff;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-  text-shadow: 0 0 5px #00ffff;
+  border-color: #ff4444;
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.3);
+  text-shadow: 0 0 5px #ff4444;
 }
 
 .form-group input::placeholder,
@@ -949,8 +943,8 @@ body {
   max-height: 250px;
   object-fit: cover;
   border-radius: 15px;
-  border: 2px solid rgba(0, 255, 255, 0.5);
-  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.2);
+  border: 2px solid rgba(220, 20, 60, 0.5);
+  box-shadow: 0 8px 25px rgba(220, 20, 60, 0.2);
 }
 
 .form-actions {
@@ -960,7 +954,7 @@ body {
   margin-top: 2rem;
 }
 
-/* Cyber Grid Background Effect */
+/* Cinematic Grid Background Effect */
 .App::before {
   content: '';
   position: fixed;
@@ -969,8 +963,8 @@ body {
   width: 100%;
   height: 100%;
   background-image: 
-    linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(220, 20, 60, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(220, 20, 60, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
   pointer-events: none;
   z-index: -1;
@@ -1332,24 +1326,24 @@ body {
 }
 
 .toast-success {
-  background: rgba(0, 255, 136, 0.15);
-  border-color: #00ff88;
-  color: #00ff88;
-  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+  background: rgba(220, 20, 60, 0.15);
+  border-color: #ff6666;
+  color: #ff6666;
+  box-shadow: 0 4px 20px rgba(220, 20, 60, 0.3);
 }
 
 .toast-error {
-  background: rgba(255, 59, 48, 0.15);
-  border-color: #ff3b30;
-  color: #ff3b30;
-  box-shadow: 0 4px 20px rgba(255, 59, 48, 0.3);
+  background: rgba(220, 20, 60, 0.15);
+  border-color: #ff4444;
+  color: #ff4444;
+  box-shadow: 0 4px 20px rgba(220, 20, 60, 0.3);
 }
 
 .toast-warning {
-  background: rgba(255, 165, 0, 0.15);
-  border-color: #ffa500;
-  color: #ffa500;
-  box-shadow: 0 4px 20px rgba(255, 165, 0, 0.3);
+  background: rgba(220, 20, 60, 0.15);
+  border-color: #ff4444;
+  color: #ff4444;
+  box-shadow: 0 4px 20px rgba(220, 20, 60, 0.3);
 }
 
 @keyframes slideInRight {

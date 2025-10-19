@@ -50,11 +50,11 @@ const Orders = () => {
 
   const getStatusBadge = (status) => {
     const statusConfig = {
-      pending: { icon: '⏳', color: '#ffa500', label: 'Pending' },
-      paid: { icon: '✅', color: '#00ff88', label: 'Paid' },
-      shipped: { icon: '🚚', color: '#4a90e2', label: 'Shipped' },
-      delivered: { icon: '📦', color: '#00ff88', label: 'Delivered' },
-      cancelled: { icon: '❌', color: '#ff3b30', label: 'Cancelled' }
+      pending: { icon: '⏳', color: '#d4af37', label: 'Pending' },
+      paid: { icon: '✅', color: '#c4956f', label: 'Paid' },
+      shipped: { icon: '🚚', color: '#8b7355', label: 'Shipped' },
+      delivered: { icon: '📦', color: '#c4956f', label: 'Delivered' },
+      cancelled: { icon: '❌', color: '#a85c3a', label: 'Cancelled' }
     };
 
     const config = statusConfig[status] || statusConfig.pending;
@@ -69,7 +69,7 @@ const Orders = () => {
   if (loading) {
     return (
       <div className="loading-container">
-        <div className="cyber-loader">
+        <div className="cinema-loader">
           <div className="loader-ring"></div>
           <div className="loader-ring"></div>
           <div className="loader-ring"></div>

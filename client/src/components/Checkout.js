@@ -213,7 +213,7 @@ const Checkout = () => {
   if (loading) {
     return (
       <div className='loading-container'>
-        <div className='cyber-loader'><div className='loader-ring'></div></div>
+        <div className='cinema-loader'><div className='loader-ring'></div></div>
         <p className='loading-text'>🚀 LOADING CHECKOUT...</p>
       </div>
     );
@@ -230,7 +230,7 @@ const Checkout = () => {
 
   const stripeOptions = {
     clientSecret,
-    appearance: { theme: 'night', variables: { colorPrimary: '#00ffff', colorBackground: '#0a0a0a', colorText: '#e0e0e0' } }
+    appearance: { theme: 'night', variables: { colorPrimary: '#c4956f', colorBackground: '#1a1612', colorText: '#e8d5c4' } }
   };
 
   return (
@@ -290,7 +290,7 @@ const Checkout = () => {
                     </Elements>
                   ) : (
                     <div className='loading-payment'>
-                      <div className='cyber-loader'><div className='loader-ring'></div></div>
+                      <div className='cinema-loader'><div className='loader-ring'></div></div>
                       <p>⚡ Initializing payment...</p>
                       <p style={{fontSize: '12px', color: '#888', marginTop: '10px'}}>
                         If this takes too long, try refreshing the page or switching to Cash on Delivery

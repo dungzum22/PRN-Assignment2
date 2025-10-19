@@ -8,13 +8,13 @@
 }
 
 .success-card {
-  background: rgba(10, 10, 10, 0.9);
-  border: 2px solid #00ff88;
+  background: rgba(20, 20, 20, 0.9);
+  border: 2px solid #ff6666;
   border-radius: 16px;
   padding: 3rem 2rem;
   max-width: 600px;
   width: 100%;
-  box-shadow: 0 8px 32px rgba(0, 255, 136, 0.3);
+  box-shadow: 0 8px 32px rgba(255, 102, 102, 0.3);
   text-align: center;
   animation: slideUpFade 0.6s ease-out;
 }
@@ -40,8 +40,8 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: rgba(0, 255, 136, 0.1);
-  border: 3px solid #00ff88;
+  background: rgba(220, 20, 60, 0.1);
+  border: 3px solid #ff6666;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,8 +61,8 @@
 .checkmark {
   width: 40px;
   height: 20px;
-  border-left: 4px solid #00ff88;
-  border-bottom: 4px solid #00ff88;
+  border-left: 4px solid #ff6666;
+  border-bottom: 4px solid #ff6666;
   transform: rotate(-45deg);
   animation: drawCheck 0.4s ease-out 0.3s both;
 }
@@ -80,20 +80,20 @@
 
 .success-title {
   font-size: 2rem;
-  color: #00ff88;
+  color: #ff6666;
   margin-bottom: 1rem;
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  text-shadow: 0 0 10px rgba(255, 102, 102, 0.5);
 }
 
 .success-message {
   font-size: 1.1rem;
-  color: #e0e0e0;
+  color: #e8e8e8;
   margin-bottom: 2rem;
 }
 
 .payment-details {
-  background: rgba(0, 255, 136, 0.05);
-  border: 1px solid #00ff88;
+  background: rgba(220, 20, 60, 0.05);
+  border: 1px solid #ff6666;
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -111,19 +111,19 @@
 }
 
 .detail-label {
-  color: #888;
+  color: #b8b8b8;
   font-size: 0.9rem;
 }
 
 .detail-value {
-  color: #00ff88;
+  color: #ff6666;
   font-family: monospace;
   font-size: 0.9rem;
 }
 
 .order-summary-section {
-  background: rgba(0, 255, 255, 0.05);
-  border: 1px solid #00ffff;
+  background: rgba(220, 20, 60, 0.05);
+  border: 1px solid #ff4444;
   border-radius: 8px;
   padding: 1.5rem;
   margin: 2rem 0;
@@ -131,7 +131,7 @@
 }
 
 .order-summary-section h3 {
-  color: #00ffff;
+  color: #ff4444;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -152,11 +152,11 @@
 }
 
 .info-row span:first-child {
-  color: #888;
+  color: #b8b8b8;
 }
 
 .info-row span:last-child {
-  color: #e0e0e0;
+  color: #e8e8e8;
   font-weight: 600;
 }
 
@@ -168,13 +168,13 @@
 }
 
 .status-paid {
-  background: rgba(0, 255, 136, 0.2);
-  color: #00ff88;
-  border: 1px solid #00ff88;
+  background: rgba(220, 20, 60, 0.2);
+  color: #ff6666;
+  border: 1px solid #ff6666;
 }
 
 .amount {
-  color: #00ff88 !important;
+  color: #ff6666 !important;
   font-size: 1.2rem !important;
 }
 
@@ -183,7 +183,7 @@
 }
 
 .items-list h4 {
-  color: #00ffff;
+  color: #ff4444;
   margin-bottom: 0.75rem;
   font-size: 1rem;
 }
@@ -198,11 +198,11 @@
 }
 
 .order-item span {
-  color: #e0e0e0;
+  color: #e8e8e8;
 }
 
 .order-item span:last-child {
-  color: #00ff88;
+  color: #ff6666;
   font-weight: 600;
 }
 
@@ -216,13 +216,13 @@
 
 .success-note {
   padding: 1rem;
-  background: rgba(0, 255, 255, 0.05);
-  border-left: 3px solid #00ffff;
+  background: rgba(220, 20, 60, 0.05);
+  border-left: 3px solid #ff4444;
   border-radius: 4px;
 }
 
 .success-note p {
-  color: #888;
+  color: #b8b8b8;
   font-size: 0.9rem;
   margin: 0;
 }

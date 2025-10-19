@@ -8,19 +8,19 @@
 .orders-header {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #00ff88;
+  border-bottom: 2px solid #ff6666;
 }
 
 .orders-header h2 {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 2rem;
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  text-shadow: 0 0 10px rgba(255, 102, 102, 0.5);
 }
 
 .success-message {
-  background: rgba(0, 255, 136, 0.1);
-  border: 2px solid #00ff88;
-  color: #00ff88;
+  background: rgba(220, 20, 60, 0.1);
+  border: 2px solid #ff6666;
+  color: #ff6666;
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -43,8 +43,8 @@
 .empty-orders {
   text-align: center;
   padding: 4rem 2rem;
-  background: rgba(26, 26, 46, 0.95);
-  border: 2px solid #333;
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid #3a3a3a;
   border-radius: 15px;
   margin-top: 2rem;
 }
@@ -56,13 +56,13 @@
 }
 
 .empty-orders h3 {
-  color: #fff;
+  color: #e8e8e8;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
 .empty-orders p {
-  color: #888;
+  color: #b8b8b8;
   margin-bottom: 2rem;
 }
 
@@ -73,16 +73,16 @@
 }
 
 .order-card {
-  background: rgba(26, 26, 46, 0.95);
-  border: 2px solid #333;
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid #3a3a3a;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .order-card:hover {
-  border-color: #00ff88;
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+  border-color: #ff6666;
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.2);
 }
 
 .order-header {
@@ -95,7 +95,7 @@
 }
 
 .order-header:hover {
-  background: rgba(0, 255, 136, 0.05);
+  background: rgba(220, 20, 60, 0.05);
 }
 
 .order-header-info {
@@ -110,7 +110,7 @@
 }
 
 .order-id-section h3 {
-  color: #fff;
+  color: #e8e8e8;
   font-size: 1.4rem;
   margin: 0;
 }
@@ -131,7 +131,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  color: #888;
+  color: #b8b8b8;
   font-size: 0.95rem;
 }
 
@@ -145,7 +145,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #00ff88;
+  color: #ff6666;
   font-weight: 700;
   font-size: 1.1rem;
 }
@@ -157,9 +157,9 @@
 }
 
 .expand-btn {
-  background: rgba(0, 255, 136, 0.1);
-  border: 2px solid #00ff88;
-  color: #00ff88;
+  background: rgba(220, 20, 60, 0.1);
+  border: 2px solid #ff6666;
+  color: #ff6666;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -172,13 +172,13 @@
 }
 
 .expand-btn:hover {
-  background: rgba(0, 255, 136, 0.2);
+  background: rgba(220, 20, 60, 0.2);
   transform: scale(1.1);
 }
 
 .order-details {
   padding: 0 1.5rem 1.5rem;
-  border-top: 1px solid #333;
+  border-top: 1px solid #3a3a3a;
   animation: expandDown 0.3s ease-out;
 }
 
@@ -205,23 +205,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: rgba(15, 15, 30, 0.6);
+  background: rgba(10, 10, 10, 0.6);
   border-radius: 8px;
 }
 
 .order-item-info h4 {
-  color: #fff;
+  color: #e8e8e8;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
 .order-item-price {
-  color: #888;
+  color: #b8b8b8;
   font-size: 0.9rem;
 }
 
 .order-item-subtotal {
-  color: #00ff88;
+  color: #ff6666;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -229,7 +229,7 @@
 .order-summary {
   margin-top: 1.5rem;
   padding: 1.5rem;
-  background: rgba(15, 15, 30, 0.4);
+  background: rgba(10, 10, 10, 0.4);
   border-radius: 8px;
 }
 
@@ -238,17 +238,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
-  color: #ccc;
+  color: #d0a580;
 }
 
 .summary-row span:last-child {
   font-weight: 600;
-  color: #fff;
+  color: #e8e8e8;
 }
 
 .free-badge {
-  background: rgba(0, 255, 136, 0.2);
-  color: #00ff88 !important;
+  background: rgba(220, 20, 60, 0.2);
+  color: #ff6666 !important;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   font-size: 0.85rem;
@@ -257,20 +257,20 @@
 
 .summary-divider {
   height: 2px;
-  background: linear-gradient(90deg, transparent, #00ff88, transparent);
+  background: linear-gradient(90deg, transparent, #ff6666, transparent);
   margin: 1rem 0;
 }
 
 .summary-total {
   font-size: 1.2rem;
-  color: #00ff88;
+  color: #ff6666;
   font-weight: 700;
   padding-top: 0.5rem;
 }
 
 .summary-total span:last-child {
   font-size: 1.4rem;
-  color: #00ff88;
+  color: #ff6666;
 }
 
 @media (max-width: 768px) {

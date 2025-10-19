@@ -39,7 +39,7 @@ const Login = () => {
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-header">
-          <h2>⚡ LOGIN TO CYBER STORE ⚡</h2>
+          <h2>🎬 LOGIN TO SHOP NEW 🎬</h2>
           <p>Access your account to manage products and orders</p>
         </div>
 
