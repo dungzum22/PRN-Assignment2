@@ -97,85 +97,94 @@ const ProductForm = () => {
     <div className="form-container">
       <div className="form-wrapper">
         <h2>🎬 {isEditing ? 'EDIT PRODUCT' : 'CREATE PRODUCT'} 🎬</h2>
-        
-        {error && <div className="error-message">🚨 {error}</div>}
-        
-        <form onSubmit={handleSubmit} className="product-form">
-          <div className="form-group">
-            <label htmlFor="name">🎞️ PRODUCT NAME *</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter product name..."
-              required
-            />
-          </div>
 
-          <div className="form-group">
-            <label htmlFor="description">📽️ DESCRIPTION *</label>
-            <textarea
-              id="description"
-              name="description"
-              value={formData.description}
-              onChange={handleChange}
-              placeholder="Enter detailed description..."
-              rows="4"
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="price">🎟️ PRICE ($) *</label>
-            <input
-              type="number"
-              id="price"
-              name="price"
-              value={formData.price}
-              onChange={handleChange}
-              placeholder="0.00"
-              step="0.01"
-              min="0"
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="imageUrl">🎬 IMAGE URL</label>
-            <input
-              type="url"
-              id="imageUrl"
-              name="imageUrl"
-              value={formData.imageUrl}
-              onChange={handleChange}
-              placeholder="https://example.com/image.jpg"
-            />
-            {formData.imageUrl && (
+        <div className="form-image-section">
+          <div className="image-preview-box">
+            {formData.imageUrl ? (
               <div className="image-preview">
                 <img src={formData.imageUrl} alt="Preview" />
               </div>
+            ) : (
+              <div className="image-preview-placeholder">🎬</div>
             )}
           </div>
+        </div>
 
-          <div className="form-actions">
-            <button
-              type="submit"
-              className="btn btn-primary"
-              disabled={loading}
-            >
-              {loading ? '⏳ PROCESSING...' : (isEditing ? '💾 UPDATE PRODUCT' : '🎬 CREATE PRODUCT')}
-            </button>
-            <button
-              type="button"
-              className="btn btn-secondary"
-              onClick={() => navigate('/')}
-            >
-              ❌ CANCEL
-            </button>
-          </div>
-        </form>
+        <div className="form-fields-section">
+          {error && <div className="error-message">🚨 {error}</div>}
+
+          <form onSubmit={handleSubmit} className="product-form">
+            <div className="form-group">
+              <label htmlFor="name">🎞️ PRODUCT NAME *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Enter product name..."
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="description">📽️ DESCRIPTION *</label>
+              <textarea
+                id="description"
+                name="description"
+                value={formData.description}
+                onChange={handleChange}
+                placeholder="Enter detailed description..."
+                rows="3"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="price">🎟️ PRICE ($) *</label>
+              <input
+                type="number"
+                id="price"
+                name="price"
+                value={formData.price}
+                onChange={handleChange}
+                placeholder="0.00"
+                step="0.01"
+                min="0"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="imageUrl">🎬 IMAGE URL</label>
+              <input
+                type="url"
+                id="imageUrl"
+                name="imageUrl"
+                value={formData.imageUrl}
+                onChange={handleChange}
+                placeholder="https://example.com/image.jpg"
+              />
+            </div>
+
+            <div className="form-actions">
+              <button
+                type="submit"
+                className="btn btn-primary"
+                disabled={loading}
+              >
+                {loading ? '⏳ PROCESSING...' : (isEditing ? '💾 UPDATE PRODUCT' : '🎬 CREATE PRODUCT')}
+              </button>
+              <button
+                type="button"
+                className="btn btn-secondary"
+                onClick={() => navigate('/')}
+              >
+                ❌ CANCEL
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
