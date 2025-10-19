@@ -124,70 +124,90 @@ const Cart = () => {
         </div>
       )}
 
-      <h2>🛒 Your Cart</h2>
-      <div className="cart-items">
-        {cart.items.map(item => (
-          <div key={item.id} className="cart-item">
-            <div className="item-info">
-              <div className="item-name">{item.productName}</div>
-              <div className="item-price">${item.price.toFixed(2)}</div>
-            </div>
-            <div className="item-controls">
-              <div
-                className="quantity-controls"
-                role="group"
-                aria-label={`Quantity for ${item.productName}`}>
-                <button
-                  aria-label={`Decrease quantity for ${item.productName}`}
-                  className="quantity-btn"
-                  onClick={() => updateQuantity(item.id, Math.max(1, item.quantity - 1))}
-                  disabled={updating[item.id] || item.quantity <= 1}
-                >
-                  −
-                </button>
-
-                <div
-                  className="quantity-display"
-                  tabIndex={0}
-                  role="spinbutton"
-                  aria-valuemin={1}
-                  aria-valuenow={item.quantity}
-                  onKeyDown={(e) => {
-                    if (e.key === 'ArrowUp') {
-                      e.preventDefault();
-                      updateQuantity(item.id, item.quantity + 1);
-                    } else if (e.key === 'ArrowDown') {
-                      e.preventDefault();
-                      updateQuantity(item.id, Math.max(1, item.quantity - 1));
-                    }
-                  }}
-                >
-                  {updating[item.id] ? '...' : item.quantity}
-                </div>
-
-                <button
-                  aria-label={`Increase quantity for ${item.productName}`}
-                  className="quantity-btn"
-                  onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                  disabled={updating[item.id]}
-                >
-                  +
-                </button>
-              </div>
-
-              <button onClick={() => handleRemoveClick(item)} disabled={updating[item.id]} className="btn btn-danger">Remove</button>
-            </div>
-            <div className="item-subtotal">${item.subtotal.toFixed(2)}</div>
-          </div>
-        ))}
+      <div className="cart-header">
+        <h2>🛒 Your Cart</h2>
+        <p className="cart-subtitle">{cart.items.length} item{cart.items.length !== 1 ? 's' : ''}</p>
       </div>
 
-      <div className="cart-summary">
-        <div>Total items: {cart.items.reduce((s, it) => s + it.quantity, 0)}</div>
-        <div>Total: ${cart.totalAmount.toFixed(2)}</div>
-        <div className="cart-actions">
-          <Link to="/checkout" className="btn btn-primary">Proceed to Checkout</Link>
-          <Link to="/" className="btn btn-secondary">Continue Shopping</Link>
+      <div className="cart-content">
+        <div className="cart-items-section">
+          {cart.items.map(item => (
+            <div key={item.id} className="cart-item">
+              <div className="item-details">
+                <div className="item-header">
+                  <h3 className="item-name">{item.productName}</h3>
+                  <div className="item-price-main">${item.price.toFixed(2)}</div>
+                </div>
+              </div>
+
+              <div className="item-actions-section">
+                <div className="quantity-controls" role="group" aria-label={`Quantity for ${item.productName}`}>
+                  <button
+                    aria-label={`Decrease quantity for ${item.productName}`}
+                    className="quantity-btn"
+                    onClick={() => updateQuantity(item.id, Math.max(1, item.quantity - 1))}
+                    disabled={updating[item.id] || item.quantity <= 1}
+                  >
+                    −
+                  </button>
+
+                  <div
+                    className="quantity-display"
+                    tabIndex={0}
+                    role="spinbutton"
+                    aria-valuemin={1}
+                    aria-valuenow={item.quantity}
+                    onKeyDown={(e) => {
+                      if (e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        updateQuantity(item.id, item.quantity + 1);
+                      } else if (e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        updateQuantity(item.id, Math.max(1, item.quantity - 1));
+                      }
+                    }}
+                  >
+                    {updating[item.id] ? '...' : item.quantity}
+                  </div>
+
+                  <button
+                    aria-label={`Increase quantity for ${item.productName}`}
+                    className="quantity-btn"
+                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                    disabled={updating[item.id]}
+                  >
+                    +
+                  </button>
+                </div>
+
+                <div className="item-subtotal-section">
+                  <span className="subtotal-label">Subtotal:</span>
+                  <span className="subtotal-value">${item.subtotal.toFixed(2)}</span>
+                </div>
+
+                <button onClick={() => handleRemoveClick(item)} disabled={updating[item.id]} className="btn btn-danger btn-small">Remove</button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="cart-summary-section">
+          <div className="summary-card">
+            <h3>Order Summary</h3>
+            <div className="summary-row">
+              <span className="summary-label">Subtotal</span>
+              <span className="summary-value">${cart.items.reduce((sum, item) => sum + item.subtotal, 0).toFixed(2)}</span>
+            </div>
+            <div className="summary-divider"></div>
+            <div className="summary-row total-row">
+              <span className="total-label">Total</span>
+              <span className="total-value">${cart.totalAmount.toFixed(2)}</span>
+            </div>
+            <div className="summary-actions">
+              <Link to="/checkout" className="btn btn-primary btn-full">🎬 Proceed to Checkout</Link>
+              <Link to="/" className="btn btn-secondary btn-full">Continue Shopping</Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

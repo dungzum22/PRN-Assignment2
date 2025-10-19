@@ -96,13 +96,13 @@ const ProductForm = () => {
   return (
     <div className="form-container">
       <div className="form-wrapper">
-        <h2>⚡ {isEditing ? 'EDIT PRODUCT' : 'CREATE PRODUCT'} ⚡</h2>
+        <h2>🎬 {isEditing ? 'EDIT PRODUCT' : 'CREATE PRODUCT'} 🎬</h2>
         
         {error && <div className="error-message">🚨 {error}</div>}
         
         <form onSubmit={handleSubmit} className="product-form">
           <div className="form-group">
-            <label htmlFor="name">🏷️ PRODUCT NAME *</label>
+            <label htmlFor="name">🎞️ PRODUCT NAME *</label>
             <input
               type="text"
               id="name"
@@ -115,7 +115,7 @@ const ProductForm = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="description">📝 DESCRIPTION *</label>
+            <label htmlFor="description">📽️ DESCRIPTION *</label>
             <textarea
               id="description"
               name="description"
@@ -128,7 +128,7 @@ const ProductForm = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="price">💰 PRICE ($) *</label>
+            <label htmlFor="price">🎟️ PRICE ($) *</label>
             <input
               type="number"
               id="price"
@@ -143,7 +143,7 @@ const ProductForm = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="imageUrl">🖼️ IMAGE URL</label>
+            <label htmlFor="imageUrl">🎬 IMAGE URL</label>
             <input
               type="url"
               id="imageUrl"
@@ -165,7 +165,7 @@ const ProductForm = () => {
               className="btn btn-primary"
               disabled={loading}
             >
-              {loading ? '⚡ PROCESSING...' : (isEditing ? '💾 UPDATE PRODUCT' : '🚀 CREATE PRODUCT')}
+              {loading ? '⏳ PROCESSING...' : (isEditing ? '💾 UPDATE PRODUCT' : '🎬 CREATE PRODUCT')}
             </button>
             <button
               type="button"
