@@ -150,32 +150,6 @@
   padding: 0 0.5rem;
 }
 
-/* ===== SUBTOTAL AND REMOVE ===== */
-.item-subtotal-section {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(20, 20, 20, 0.6);
-  padding: 0.7rem 1rem;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 68, 68, 0.15);
-}
-
-.subtotal-label {
-  color: rgba(232, 232, 232, 0.7);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.subtotal-value {
-  color: #ff6666;
-  font-size: 1.1rem;
-  font-weight: 900;
-  text-shadow: 0 0 8px rgba(255, 102, 102, 0.2);
-}
-
 .btn-small {
   padding: 0.65rem 1rem !important;
   font-size: 0.8rem !important;

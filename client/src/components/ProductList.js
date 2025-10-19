@@ -105,7 +105,6 @@ const ProductList = () => {
           <div className="delete-modal" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
               <h3>Delete Confirmation</h3>
-              <button className="close-button" onClick={handleDeleteCancel}>×</button>
             </div>
             <div className="modal-body">
               <p className="modal-message">

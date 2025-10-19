@@ -97,7 +97,6 @@ const Cart = () => {
           <div className="delete-modal" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
               <h3>Remove Item</h3>
-              <button className="close-button" onClick={handleRemoveCancel}>×</button>
             </div>
             <div className="modal-body">
               <p className="modal-message">
@@ -178,11 +177,6 @@ const Cart = () => {
                   >
                     +
                   </button>
-                </div>
-
-                <div className="item-subtotal-section">
-                  <span className="subtotal-label">Subtotal:</span>
-                  <span className="subtotal-value">${item.subtotal.toFixed(2)}</span>
                 </div>
 
                 <button onClick={() => handleRemoveClick(item)} disabled={updating[item.id]} className="btn btn-danger btn-small">Remove</button>
